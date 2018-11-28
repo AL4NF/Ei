@@ -1,0 +1,177 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* ------------------===HEADER===------------------ */
+header{
+  width: 100%;
+}
+header nav{
+  width:100%;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+}
+.menu_bar{
+  display: none;
+}
+header nav ul{
+  overflow: hidden;
+  list-style: none;
+}
+header nav ul li{
+  float: left;
+}
+header nav ul li a{
+  display:block;
+  color: white;
+  padding:20px;
+  text-decoration: none;
+}
+header nav ul li a:hover{
+  background:gray;
+}
+.logoHeader{
+  width: 55px;
+  margin: 0px 5px 0px 5px;
+}
+/* desapacer submenus */
+nav li ul{
+  display: none;
+  position: relative;
+  min-width: 20px;
+}
+nav li:hover>ul{
+  display: block;
+}
+
+
+
+
+/* @media screen and (max-width:800px;) {
+  header nav{
+    width: 100%;
+    height: 100%;
+    margin:0;
+    position: fixed;
+  } */
+
+
+/* --------------------------------------------------------------------------------- */
+
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.firstSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.logo
+{
+  width:250px;
+  opacity: 0.9;
+  padding: 2em;
+  left: auto;
+  right: auto;
+}
+.logoName
+{
+  width:600px;
+  left: auto;
+  right: auto;
+}
+.subtitle
+{
+  font-size: 40px;
+  padding: 10px 0 20px 0;
+  color: gray;
+  /* font-family: */
+}
+
+.thirdSection
+{
+  background-image: url("img/blackWallpaper.jpg");
+}
+.thirdSection div
+{
+  width:800px ;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.thirdSection a {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  margin: 0 10px;
+}
+.thirdSection div img
+{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.social-footer
+{
+  /* background-image: url("img/siguenos.jpg"); */
+  width:100%;
+  height: 300px;
+  background-position:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+ footer img,
+ .siguenos img
+{
+  width: 40px;
+}
+.siguenos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-top: 50px; */
+  background-color: black;
+}
+
+h2
+{
+  color: black;
+}
+h3
+{
+  color: white;
+}
+
+
+
+
+
+.parallax-window {
+	min-height: 400px;
+  width: 100%;
+}
+
+
+#particles-js{
+  height: 100vh;
+  background-color: white;
+}
