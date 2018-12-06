@@ -3,75 +3,180 @@
   <head>
     <meta charset="utf-8">
     <title>EI | Home</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="assets/styles.css" rel="stylesheet">
-    <!-- <link href="assets/fonts/fonts.css" rel="stylesheet"> -->
     <link href="assets/img/logo.png" rel="shortcut icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-
     <header>
-      <!-- <div class="menu_bar">
-        <a href=""class="bt-menu">Menu</a>
-      </div> -->
-      <nav>
+      <div>
         <a href="index.html"><img class="logoHeader"src="assets/img/logo.png"></a>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-
-          <li><a href="views/servicios/index.html">Servicios</a>
-            <ul>
-              <li><a href="">SubMenu1</a></li>
-              <li><a href="">SubMenu2</a></li>
-              <li><a href="">SubMenu3</a></li>
-            </ul>
-          </li>
-          </li>
-
-          <li><a href="">Productos</a>
-            <ul>
-              <li><a href="">ABB</a></li>
-              <li><a href="">Truper</a></li>
-              <li><a href="">SubMenu3</a>
-                <ul>
-                  <li><a href="">....</a></li>
-                  <li><a href="">..</a></li>
-                  <li><a href="">...</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-
-          <li><a href="">Contacto</a></li>
-          <li><a href="">Log-In</a></li>
-        </ul>
-      </nav>
+      </div>
+     <ul class="links">
+       <li class="list_item">
+         <p>Inicio</p>
+       </li>
+       <li class="list_item">
+         <p>Servicios</p>
+         <div class="dropdown">
+           <ul>
+             <li>Suministro de Material</li>
+             <li>Atencion a Proyectos</li>
+             <li>Armado de Tableros</li>
+           </ul>
+         </div>
+       </li>
+       <li class="list_item">
+         <p>Productos</p>
+         <div class="dropdown">
+           <ul>
+             <li>ABB</li>
+             <li>Truper</li>
+             <li>Groen</li>
+             <li>Anclo</li>
+           </ul>
+         </div>
+       </li>
+       <li class="list_item">
+         <p>Contacto</p>
+       </li>
+       <li class="list_item">
+         <p>Log-In</p>
+       </li>
+     </ul>
+      <i class="material-icons mobile-show sidemenu-button">menu</i>
     </header>
 
-
-      <section class=firstSection>
-        <img class="logo"src="assets/img/logo.png">
-        <img class ="logoName"src="assets/img/textoEi.png">
+    <section class="sideMenu mobile-show">
+      <i class="material-icons sidemenu-button">cancel</i>
+      <ul class="linksMovil">
+        <li class="list_itemMovil">
+          <p>Inicio</p>
+        </li>
+        <li class="list_itemMovil">
+          <p>Servicios</p>
+          <div class="dropdownMovil">
+            <ul>
+              <li>Suministro de material </li>
+              <li>Atención a proyectos</li>
+              <li>Armado de tablero</li>
+            </ul>
+          </div>
+        </li>
+        <li class="list_itemMovil">
+          <p>Productos</p>
+          <div class="dropdownMovil">
+            <ul>
+              <li>ABB</li>
+              <li>Truper</li>
+              <li>Groen</li>
+              <li>Anclo</li>
+            </ul>
+          </div>
+        </li>
+        <li class="list_itemMovil">
+          <p>Contacto</p>
+        </li>
+        <li class="list_itemMovil">
+          <p>Log-In</p>
+        </li>
+      </ul>
       </section>
 
-      <section class= "secondSection" class="parallax-window social-footer " data-parallax="scroll" data-image-src="assets/img/wallpaperPrueba.jpg">
+    <section class="carrousel">
+    <i class="material-icons arrow-left">keyboard_arrow_left</i>
+    <div class="imageContainer">
+      <article class="carrouselItem">
+        <picture>
+          <img src="assets/img/img.png" alt="">
+        </picture>
+      </article>
+
+      <article class="carrouselItem">
+        <picture>
+          <img src="assets/img/img3.jpg" alt="">
+        </picture>
+      </article>
+
+      <article class="carrouselItem">
+        <picture>
+          <img src="assets/img/img4.jpg" alt="">
+        </picture>
+      </article>
+
+        <article class="carrouselItem">
+          <picture>
+            <img src="assets/img/img5.jpg" alt="">
+          </picture>
+        </article>
+
+          <article class="carrouselItem">
+            <picture>
+              <img src="assets/img/img6.jpg" alt="">
+            </picture>
+            </article>
+
+            <article class="carrouselItem">
+              <picture>
+                <img src="assets/img/img8.jpg" alt="">
+              </picture>
+            </article>
+
+      <article class="carrouselItem">
+        <picture>
+          <img src="assets/img/img9.jpg" alt="">
+        </picture>
+      </article>
+      <article class="carrouselItem">
+        <picture>
+          <img src="assets/img/img10.jpg" alt="">
+        </picture>
+        </article>
+    </div>
+    <i class="material-icons arrow-right">keyboard_arrow_right</i>
+
+  </section>
+
+    <section class="AboutUs">
+      <div class="div1">
+        <p>dbeg</p>
+      </div>
+      <div class="div2">
+      <p>ajias</p>
+      <!-- <img src="assets/img/img.png" alt=""> -->
+      </div>
+    </section>
+    <!-- <div>
+      <h2 class="subtitle">¿Quienes Somos?</h2>
+      <p>Fundada hace 20 años como distribuidora de material eléctrico creemos en los valores  de la responsabilidad, honestidad, disciplina y calidad. contamos con un amplio catálogo de productosFundada hace 20 años como distribuidora de material eléctrico creemos en los valores  de la responsabilidad, honestidad, disciplina y calidad. contamos con un amplio catálogo de productos</p>
+    </div>
+    <div>
+      <h2 class="subtitle">¿A donde Vamos?</h2>
+      <p>La evolución de la empresa se basa en la convicción de la mejora continua como forma de vida y la contribución de formar profesionales capacitados, altamente comprometidos con nuestros clientes y entorno.</p>
+    </div>
+    <div>
+      <h2 class="subtitle">¿Que hacemos?</h2>
+      <p>Ayudamos a los clientes a obtener los productos eléctricos, de distribución y control  adecuados a sus necesidades</p>
+    </div>
+    <div>
+      <h2 class="subtitle">¿Comó Trabajamos?</h2>
+      <p>Contamos con diferentes formas de atención: en nuestras instalaciones, telefónica, en campo, y con diferentes clientes: integradores, electricistas, contratistas, gobierno, industria y público en general</p>
+    </div> -->
+
+
+    <section class= "secondSection" class="parallax-window social-footer " data-parallax="scroll" data-image-src="assets/img/wallpaperPrueba.jpg">
         <h2 class="subtitle">¿Quienes Somos?<h2>
-        <p>Fundada hace 20 años</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+        <p>Fundada hace 20 años como distribuidora de material eléctrico creemos en los valores  de la responsabilidad, honestidad, disciplina y calidad. contamos con un amplio catálogo de productosFundada hace 20 años como distribuidora de material eléctrico creemos en los valores  de la responsabilidad, honestidad, disciplina y calidad. contamos con un amplio catálogo de productos</p>
 
         <h2 class="subtitle">¿A donde Vamos?<h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem eius, totam facere explicabo maiores vero.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+        <p>La evolución de la empresa se basa en la convicción de la mejora continua como forma de vida y la contribución de formar profesionales capacitados, altamente comprometidos con nuestros clientes y entorno.</p>
         <h2 class="subtitle">¿Que hacemos?<h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum veniam, sit consequuntur accusamus eaque doloremque!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+          <p>Ayudamos a los clientes a obtener los productos eléctricos, de distribución y control  adecuados a sus necesidades</p>
         <h2 class="subtitle">¿Comó Trabajamos?<h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni fuga nesciunt et, alias quaerat, possimus.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </section>
+        <p>Contamos con diferentes formas de atención: en nuestras instalaciones, telefónica, en campo, y con diferentes clientes: integradores, electricistas, contratistas, gobierno, industria y público en general</p>
+        </section>
 
       <section class=thirdSection>
         <h2 class="subtitle">Nuestras Marcas</h2>
@@ -87,16 +192,13 @@
             <a href=""><img src="assets/img/hermexlogo.jpg" alt=""></a>
             <a href=""><img src="" alt=""></a>
             <a href=""><img src="" alt=""></a>
-
           </div>
 
       </section>
 
-
-
       <footer>
 
-        <section class="parallax-window social-footer " data-parallax="scroll" data-image-src="assets/img/siguenos.jpg">
+        <section class="parallax-window social-footer" data-parallax="scroll" data-image-src="assets/img/siguenos.jpg">>
         <div>
           <div>
             <h2>Síguenos</h2>
@@ -135,11 +237,12 @@
 
       </footer>
 
-      <div class="parallax-window social-footer " data-parallax="scroll" data-image-src="assets/img/wallpaperPrueba.jpg"></div>
+      <!-- <div class="parallax-window social-footer " data-parallax="scroll" data-image-src="assets/img/wallpaperPrueba.jpg"></div> -->
 
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="/node_modules/jquery-parallax.js/parallax.js"></script>
+      <script src="assets/scripts.js"></script>
 
       <!-- <script src="assets/scripts.js"></script> -->
 

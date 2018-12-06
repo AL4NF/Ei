@@ -2,97 +2,212 @@
   margin: 0;
   padding: 0;
 }
-/* ------------------===HEADER===------------------ */
-header{
-  width: 100%;
-}
-header nav{
-  width:100%;
-  background: black;
-  display: flex;
-  justify-content: space-between;
-}
-.menu_bar{
-  display: none;
-}
-header nav ul{
-  overflow: hidden;
-  list-style: none;
-}
-header nav ul li{
-  float: left;
-}
-header nav ul li a{
-  display:block;
-  color: white;
-  padding:20px;
-  text-decoration: none;
-}
-header nav ul li a:hover{
-  background:gray;
-}
-.logoHeader{
-  width: 55px;
-  margin: 0px 5px 0px 5px;
-}
-/* desapacer submenus */
-nav li ul{
-  display: none;
-  position: relative;
-  min-width: 20px;
-}
-nav li:hover>ul{
-  display: block;
-}
-
-
-
-
-/* @media screen and (max-width:800px;) {
-  header nav{
-    width: 100%;
-    height: 100%;
-    margin:0;
-    position: fixed;
-  } */
-
-
-/* --------------------------------------------------------------------------------- */
-
-
 body{
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.firstSection{
+/* ------------------===HEADER===------------------ */
+header{
+  align-items: center;
+  background-color: black;
+  height: 55px;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+.links  {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Dropdown Menu */
+.list_item  {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 55px;
+  justify-content: center;
+  position: relative; /* Para que sea la referencia del dropdown */
+  width: 120px;
+  color:white
+}
+
+.list_item:hover {
+  background-color: gray;
+}
+
+.list_item:hover .dropdown { /* Que se muestre el dropdown cuando el mouse esté sobre el detonador */
+  display: block;
+}
+
+.dropdown {
+  display: none; /* Esconder el dropdown por default */
+  background-color: black;
+  position: absolute;
+  top: 55px; /* Hay que acomodar el dropdown done queramos que aparesca */
+  left: 0;
+  width: 100%;
+}
+
+.dropdown ul {
+  list-style: none;
+}
+
+.dropdown li {
+  border-bottom: 1px solid red;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background-color: gray;
+}
+.logoHeader{
+  width: 50px;
+}
+/* ---===SideMenu===------- */
+
+
+.mobile-show {
+  display: none;
+  font-size: 35px;
+  color:white
+}
+.sideMenu{
+  box-sizing: border-box;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  /* bottom: 0 */
+  right:-300px;
+  width:300px;
+  transition: right .06s;
+  padding: 55px 10px;
+}
+.sideMenu.active
+{
+  right:0;
+}
+/* Sidemenu styling */
+
+.linksMovil {
+  list-style: none;
+}
+.dropdownMovil ul {
+  list-style: none;
+}
+.list_itemMovil {
+  box-sizing: border-box;
+  border-bottom: 1px solid red;
+  padding: 20px;
+  width: 100%;
+}
+.list_itemMovil p {
+  font-weight: bold;
+}
+.dropdownMovil ul li {
+  padding: 8px 0;
+}
+@media screen and (max-width:769px) {
+  .mobile-show {
+    display: block;
+  }
+
+  .links {
+    display: none;
+    color:white;
+  }
+}
+/* ------------------===Carrousel===------------------ */
+.carrousel{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  height: 100vh;
+  height:calc(100vh - 55px);
+  width:100%;
+  padding-top: 55px;
+}
+.imageContainer{
+  display: flex;
+  height: 100%;
+  width: 1500px;
+   overflow: hidden;
+}
+.carrouselItem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 900px;
+  width: 100%;
+  flex-shrink: 0;
+  transition: transform .5s;
+}
+.carrouselItem picture {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+.carrouselItem picture img{
+  height: 100%;
+  width: 100%;
+}
+.arrow-left{
+  background-color: gray;
+  font-size: 40px;
+  border-radius: 80px;
+  position: absolute;
+  top: 400px;
+  left:10px;
+  z-index: 1;
+}
+.arrow-right{
+  background-color: gray;
+  font-size: 40px;
+  border-radius: 80px;
+  position: absolute;
+  top:400px;
+  right: 10px;
+  z-index: 1;
 }
 
-.logo
-{
-  width:250px;
-  opacity: 0.9;
-  padding: 2em;
-  left: auto;
-  right: auto;
+/* ------------------===FirstSection===------------------ */
+
+.AboutUs{
+  display: flex;
+  justify-content: center;
+  /* background-image: url('img/img8.jpg'); */
+  background-size: cover;
+  height: 100vh;
 }
-.logoName
-{
-  width:600px;
-  left: auto;
-  right: auto;
+.subtitle{
+  margin:10px;
 }
+.div1{
+  background-color: yellow;
+  width: 50%;
+}
+.div2{
+  background-color: black;
+  width: 50%;
+}
+
+
+
+
+
+
+/*
 .subtitle
 {
   font-size: 40px;
   padding: 10px 0 20px 0;
   color: gray;
-  /* font-family: */
-}
+  font-family:
+} */
 
 .thirdSection
 {
@@ -148,14 +263,9 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* margin-top: 50px; */
   background-color: black;
 }
 
-h2
-{
-  color: black;
-}
 h3
 {
   color: white;
@@ -168,10 +278,4 @@ h3
 .parallax-window {
 	min-height: 400px;
   width: 100%;
-}
-
-
-#particles-js{
-  height: 100vh;
-  background-color: white;
 }
