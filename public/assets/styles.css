@@ -1,9 +1,22 @@
+@font-face {
+  font-family: SanFrancisco;
+  src:url("fonts/SFCompactText-Bold.otf");
+  font-family: Aileron;
+  src:url("fonts/Ailerons-Typeface.otf");
+  font-family: Monopoly;
+  src:url("fonts/MONOPOLY_INLINE.ttf");
+  font-family: NovaItalic;
+  src:url("fonts/MoonBold.otf");
+}
 *{
   margin: 0;
   padding: 0;
 }
 body{
-  font-family: 'Roboto Condensed', sans-serif;
+}
+
+hr{
+  text-align: center;
 }
 
 /* ------------------===HEADER===------------------ */
@@ -116,8 +129,7 @@ header{
   .mobile-show {
     display: block;
   }
-
-  .links {
+.links {
     display: none;
     color:white;
   }
@@ -135,7 +147,7 @@ header{
   display: flex;
   height: 100%;
   width: 1500px;
-   overflow: hidden;
+  overflow: hidden;
 }
 .carrouselItem{
   display: flex;
@@ -163,6 +175,7 @@ header{
   top: 400px;
   left:10px;
   z-index: 1;
+  cursor: pointer;
 }
 .arrow-right{
   background-color: gray;
@@ -172,6 +185,15 @@ header{
   top:400px;
   right: 10px;
   z-index: 1;
+  cursor: pointer;
+}
+.carrouselTitle{
+  font-family: SanFrancisco;
+  font-size: 80px;
+  color: black;
+  position: absolute;
+  top:250px;
+  left: 30px;
 }
 
 /* ------------------===FirstSection===------------------ */
@@ -179,35 +201,82 @@ header{
 .AboutUs{
   display: flex;
   justify-content: center;
-  /* background-image: url('img/img8.jpg'); */
+  background-image: url('img/img8.jpg');
   background-size: cover;
-  height: 100vh;
+  height:800px;
 }
 .subtitle{
-  margin:10px;
+  font-family: NovaItalic;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  padding: 10px;
 }
 .div1{
-  background-color: yellow;
+  background-image: linear-gradient(rgba(9,11,10,.1), rgba(20,16,27,.6));
   width: 50%;
 }
 .div2{
-  background-color: black;
   width: 50%;
+}
+.textAboutUsSize{
+  width: 38%;
+  position: absolute;
+  left: 85px;
+}
+.paragraphAU{
+  font-family: Monopoly;
+  font-size: 30px;
+  color: white;
+  text-align: justify;
+}
+/* ------------------===services===------------------ */
+.services{
+  background-color: black;
+  position: relative;
+}
+.servicesContainer{
+  display: flex;
+  justify-content: center;
+}
+.servicesItem img{
+  width: 250px;
+}
+.servicesItem img:hover{
+transform: rotate(-180deg);
+transition: transform 0.5s;
+cursor: pointer;
+}
+.servicesSubtitle{
+  font-size: 20px;
+  color:white;
+  text-align: center;
+}
+.build, .work, .store{
+  font-size: 50px;
+  color: blue;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top:200px;
+}
+.build{
+  position: absolute;
+  left:
+}
+.work{
+  position: absolute;
+  /* left:700px; */
+}
+.store{
+  position: absolute;
+  left:450px
 }
 
 
 
 
 
-
-/*
-.subtitle
-{
-  font-size: 40px;
-  padding: 10px 0 20px 0;
-  color: gray;
-  font-family:
-} */
 
 .thirdSection
 {
@@ -266,10 +335,13 @@ header{
   background-color: black;
 }
 
-h3
-{
-  color: white;
-}
+/* h1{
+  font-family: : Aileron;
+  text-align: center;
+  font-size: 40px;
+  color:white;
+  display:block;
+} */
 
 
 
@@ -277,5 +349,5 @@ h3
 
 .parallax-window {
 	min-height: 400px;
-  width: 100%;
+  /* width: 100%; */
 }
